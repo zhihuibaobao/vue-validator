@@ -1,0 +1,561 @@
+<!DOCTYPE HTML>
+<html lang="ja" >
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>イベント | vue-validator documentation</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 2.6.7">
+        
+        
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+        
+    <link rel="stylesheet" href="gitbook/style.css">
+    
+        
+        <link rel="stylesheet" href="gitbook/plugins/gitbook-plugin-advanced-emoji/emoji-website.css">
+        
+    
+        
+        <link rel="stylesheet" href="gitbook/plugins/gitbook-plugin-highlight/website.css">
+        
+    
+        
+        <link rel="stylesheet" href="gitbook/plugins/gitbook-plugin-search/search.css">
+        
+    
+        
+        <link rel="stylesheet" href="gitbook/plugins/gitbook-plugin-fontsettings/website.css">
+        
+    
+    
+
+        
+    
+    
+    <link rel="next" href="./lazy.html" />
+    
+    
+    <link rel="prev" href="./errors.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+    <div class="book"
+        data-level="12"
+        data-chapter-title="イベント"
+        data-filepath="events.md"
+        data-basepath="."
+        data-revision="Wed Jul 20 2016 02:10:50 GMT+0900 (JST)"
+        data-innerlanguage="ja">
+    
+
+<div class="book-summary">
+    <nav role="navigation">
+        <ul class="summary">
+            
+            
+            
+            
+
+            
+
+            
+    
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="./index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                        はじめに
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1" data-path="installation.html">
+            
+                
+                    <a href="./installation.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.</b>
+                        
+                        インストール
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2" data-path="started.html">
+            
+                
+                    <a href="./started.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.</b>
+                        
+                        はじめに
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3" data-path="structure.html">
+            
+                
+                    <a href="./structure.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.</b>
+                        
+                        バリデーション結果の構造
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4" data-path="syntax.html">
+            
+                
+                    <a href="./syntax.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.</b>
+                        
+                        バリデータシンタックス
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5" data-path="validators.html">
+            
+                
+                    <a href="./validators.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.</b>
+                        
+                        ビルドインバリデータ
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6" data-path="model.html">
+            
+                
+                    <a href="./model.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.</b>
+                        
+                        v-model インテグレーション
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7" data-path="reset.html">
+            
+                
+                    <a href="./reset.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.</b>
+                        
+                        バリデーション結果の初期化
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="8" data-path="elements.html">
+            
+                
+                    <a href="./elements.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.</b>
+                        
+                        バリデーション可能なフォーム要素
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="9" data-path="classes.html">
+            
+                
+                    <a href="./classes.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.</b>
+                        
+                        バリデーションクラス
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="10" data-path="grouping.html">
+            
+                
+                    <a href="./grouping.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>10.</b>
+                        
+                        グループ化
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="11" data-path="errors.html">
+            
+                
+                    <a href="./errors.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>11.</b>
+                        
+                        エラーメッセージ
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter active" data-level="12" data-path="events.html">
+            
+                
+                    <a href="./events.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>12.</b>
+                        
+                        イベント
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="13" data-path="lazy.html">
+            
+                
+                    <a href="./lazy.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>13.</b>
+                        
+                        遅延初期化
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="14" data-path="custom.html">
+            
+                
+                    <a href="./custom.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>14.</b>
+                        
+                        カスタムバリデータ
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="15" data-path="timing.html">
+            
+                
+                    <a href="./timing.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>15.</b>
+                        
+                        バリデーションのタイミング変更
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="16" data-path="async.html">
+            
+                
+                    <a href="./async.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>16.</b>
+                        
+                        非同期バリデーション
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="17" data-path="api.html">
+            
+                
+                    <a href="./api.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>17.</b>
+                        
+                        API
+                    </a>
+            
+            
+        </li>
+    
+
+
+            
+            <li class="divider"></li>
+            <li>
+                <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+                    GitBookで公開 
+                </a>
+            </li>
+            
+        </ul>
+    </nav>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header" role="navigation">
+    <!-- Actions Left -->
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="./" >vue-validator documentation</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1" role="main">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-">
+                    
+                        <h1 id="&#x30A4;&#x30D9;&#x30F3;&#x30C8;">&#x30A4;&#x30D9;&#x30F3;&#x30C8;</h1>
+<p>&#x4E00;&#x822C;&#x7684;&#x306A; Vue &#x30A4;&#x30D9;&#x30F3;&#x30C8;&#x306E;&#x30D0;&#x30A4;&#x30F3;&#x30C7;&#x30A3;&#x30F3;&#x30B0;&#x3092;&#x4F7F;&#x3046;&#x3053;&#x3068;&#x3067;&#x3001;&#x30D0;&#x30EA;&#x30C7;&#x30FC;&#x30BF;&#x306E;&#x4E2D;&#x3067;&#x767A;&#x751F;&#x3057;&#x305F;&#x30A4;&#x30D9;&#x30F3;&#x30C8;&#x3092;&#x30D0;&#x30A4;&#x30F3;&#x30C9;&#x3055;&#x305B;&#x308B;&#x3053;&#x3068;&#x304C;&#x3067;&#x304D;&#x307E;&#x3059;&#x3002;</p>
+<h2 id="&#x30D5;&#x30A3;&#x30FC;&#x30EB;&#x30C9;&#x30D0;&#x30EA;&#x30C7;&#x30FC;&#x30B7;&#x30E7;&#x30F3;&#x30A4;&#x30D9;&#x30F3;&#x30C8;">&#x30D5;&#x30A3;&#x30FC;&#x30EB;&#x30C9;&#x30D0;&#x30EA;&#x30C7;&#x30FC;&#x30B7;&#x30E7;&#x30F3;&#x30A4;&#x30D9;&#x30F3;&#x30C8;</h2>
+<p><code>input</code> &#x30BF;&#x30B0;&#x306E;&#x4E2D;&#x3067;&#x6307;&#x5B9A;&#x3057;&#x305F; <code>v-validate</code> &#x30C7;&#x30A3;&#x30EC;&#x30AF;&#x30C6;&#x30A3;&#x30D6;&#x3068;&#x540C;&#x3058;&#x3088;&#x3046;&#x306B;&#x3001;&#x305D;&#x308C;&#x305E;&#x308C;&#x306E;&#x30D5;&#x30A3;&#x30FC;&#x30EB;&#x30C9;&#x30D7;&#x30ED;&#x30D1;&#x30C6;&#x30A3;&#x306B;&#x5BFE;&#x3057;&#x3066;&#x30A4;&#x30D9;&#x30F3;&#x30C8;&#x3092;&#x5B9F;&#x884C;&#x3059;&#x308B;&#x3053;&#x3068;&#x304C;&#x3067;&#x304D;&#x307E;&#x3059;:</p>
+<ul>
+<li><code>valid</code>: <strong>&#x5404;&#x30D5;&#x30A3;&#x30FC;&#x30EB;&#x30C9;</strong>&#x306E;&#x30D0;&#x30EA;&#x30C7;&#x30FC;&#x30B7;&#x30E7;&#x30F3;&#x7D50;&#x679C;&#x304C;&#x6709;&#x52B9;&#x306B;&#x306A;&#x308B;&#x3068;&#x767A;&#x751F;</li>
+<li><code>invalid</code>: <strong>&#x5404;&#x30D5;&#x30A3;&#x30FC;&#x30EB;&#x30C9;</strong>&#x306E;&#x30D0;&#x30EA;&#x30C7;&#x30FC;&#x30B7;&#x30E7;&#x30F3;&#x7D50;&#x679C;&#x304C;&#x7121;&#x52B9;&#x306B;&#x306A;&#x308B;&#x3068;&#x767A;&#x751F;</li>
+<li><code>touched</code>: <strong>&#x5404;&#x30D5;&#x30A3;&#x30FC;&#x30EB;&#x30C9;</strong>&#x3067;&#x3072;&#x3068;&#x3064;&#x3067;&#x3082; <code>blur</code> &#x3092;&#x691C;&#x77E5;&#x3059;&#x308B;&#x3068;&#x767A;&#x751F;</li>
+<li><code>dirty</code>: <strong>&#x5404;&#x30D5;&#x30A3;&#x30FC;&#x30EB;&#x30C9;</strong>&#x306E;&#x5024;&#x304C;&#x3072;&#x3068;&#x3064;&#x3067;&#x3082;&#x521D;&#x671F;&#x5024;&#x304B;&#x3089;&#x5909;&#x66F4;&#x3055;&#x308C;&#x305F;&#x3089;&#x767A;&#x751F;</li>
+<li><code>modified</code>: <strong>&#x5404;&#x30D5;&#x30A3;&#x30FC;&#x30EB;&#x30C9;</strong>&#x306E;&#x5024;&#x304C;&#x521D;&#x671F;&#x5024;&#x304B;&#x3089;&#x5909;&#x66F4;&#x3055;&#x308C;&#x305F;&#x3089;&#x767A;&#x751F;</li>
+</ul>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">&quot;app&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">validator</span> <span class="hljs-attribute">name</span>=<span class="hljs-value">&quot;validation1&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;comment-field&quot;</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">label</span> <span class="hljs-attribute">for</span>=<span class="hljs-value">&quot;comment&quot;</span>&gt;</span>&#x30B3;&#x30E1;&#x30F3;&#x30C8;:<span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">&quot;text&quot;</span> 
+             @<span class="hljs-attribute">valid</span>=<span class="hljs-value">&quot;onValid&quot;</span> 
+             @<span class="hljs-attribute">invalid</span>=<span class="hljs-value">&quot;onInvalid&quot;</span> 
+             @<span class="hljs-attribute">touched</span>=<span class="hljs-value">&quot;onTouched&quot;</span> 
+             @<span class="hljs-attribute">dirty</span>=<span class="hljs-value">&quot;onDirty&quot;</span> 
+             @<span class="hljs-attribute">modified</span>=<span class="hljs-value">&quot;onModified&quot;</span>
+             <span class="hljs-attribute">v-validate:comment</span>=<span class="hljs-value">&quot;[&apos;required&apos;]&quot;</span>/&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span>{{occuredValid}}<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span>{{occuredInvalid}}<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span>{{occuredTouched}}<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span>{{occuredDirty}}<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span>{{occuredModified}}<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">validator</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+</code></pre>
+<pre><code class="lang-javascript"><span class="hljs-keyword">new</span> Vue({
+  el: <span class="hljs-string">&apos;#app&apos;</span>,
+  data: {
+    occuredValid: <span class="hljs-string">&apos;&apos;</span>,
+    occuredInvalid: <span class="hljs-string">&apos;&apos;</span>,
+    occuredTouched: <span class="hljs-string">&apos;&apos;</span>,
+    occuredDirty: <span class="hljs-string">&apos;&apos;</span>,
+    occuredModified: <span class="hljs-string">&apos;&apos;</span>
+  },
+  methods: {
+    onValid: <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+      <span class="hljs-keyword">this</span>.occuredValid = <span class="hljs-string">&apos;occured valid event&apos;</span>
+      <span class="hljs-keyword">this</span>.occuredInvalid = <span class="hljs-string">&apos;&apos;</span>
+    },
+    onInvalid: <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+      <span class="hljs-keyword">this</span>.occuredInvalid = <span class="hljs-string">&apos;occured invalid event&apos;</span>
+      <span class="hljs-keyword">this</span>.occuredValid = <span class="hljs-string">&apos;&apos;</span>
+    },
+    onTouched: <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+      <span class="hljs-keyword">this</span>.occuredTouched = <span class="hljs-string">&apos;occured touched event&apos;</span>
+    },
+    onDirty: <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+      <span class="hljs-keyword">this</span>.occuredDirty = <span class="hljs-string">&apos;occured dirty event&apos;</span>
+    },
+    onModified: <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">e</span>) </span>{
+      <span class="hljs-keyword">this</span>.occuredModified = <span class="hljs-string">&apos;occured modified event: &apos;</span> + e.modified
+    }
+  }
+})
+</code></pre>
+<h2 id="&#x30C8;&#x30C3;&#x30D7;&#x30EC;&#x30D9;&#x30EB;&#x30D0;&#x30EA;&#x30C7;&#x30FC;&#x30B7;&#x30E7;&#x30F3;&#x30A4;&#x30D9;&#x30F3;&#x30C8;">&#x30C8;&#x30C3;&#x30D7;&#x30EC;&#x30D9;&#x30EB;&#x30D0;&#x30EA;&#x30C7;&#x30FC;&#x30B7;&#x30E7;&#x30F3;&#x30A4;&#x30D9;&#x30F3;&#x30C8;</h2>
+<p>&#x30C8;&#x30C3;&#x30D7;&#x30EC;&#x30D9;&#x30EB;&#x30D0;&#x30EA;&#x30C7;&#x30FC;&#x30B7;&#x30E7;&#x30F3;&#x30D7;&#x30ED;&#x30D1;&#x30C6;&#x30A3;&#x3067;&#x767A;&#x751F;&#x3057;&#x305F;&#x30A4;&#x30D9;&#x30F3;&#x30C8;&#x3092;&#x767A;&#x751F;&#x3055;&#x305B;&#x308B;&#x3053;&#x3068;&#x304C;&#x3067;&#x304D;&#x307E;&#x3059;:</p>
+<ul>
+<li><code>valid</code>: <strong>&#x30C8;&#x30C3;&#x30D7;&#x30EC;&#x30D9;&#x30EB;</strong>&#x306E;&#x30D0;&#x30EA;&#x30C7;&#x30FC;&#x30B7;&#x30E7;&#x30F3;&#x7D50;&#x679C;&#x304C;&#x6709;&#x52B9;&#x306B;&#x306A;&#x308B;&#x3068;&#x767A;&#x751F;</li>
+<li><code>invalid</code>: <strong>&#x30C8;&#x30C3;&#x30D7;&#x30EC;&#x30D9;&#x30EB;</strong>&#x306E;&#x30D0;&#x30EA;&#x30C7;&#x30FC;&#x30B7;&#x30E7;&#x30F3;&#x7D50;&#x679C;&#x304C;&#x7121;&#x52B9;&#x306B;&#x306A;&#x308B;&#x3068;&#x767A;&#x751F;</li>
+<li><code>touched</code>: <strong>&#x30C8;&#x30C3;&#x30D7;&#x30EC;&#x30D9;&#x30EB;</strong>&#x3067;&#x3072;&#x3068;&#x3064;&#x3067;&#x3082; <code>blur</code> &#x3092;&#x691C;&#x77E5;&#x3059;&#x308B;&#x3068;&#x767A;&#x751F;</li>
+<li><code>dirty</code>: <strong>&#x30C8;&#x30C3;&#x30D7;&#x30EC;&#x30D9;&#x30EB;</strong>&#x306E;&#x5024;&#x304C;&#x3072;&#x3068;&#x3064;&#x3067;&#x3082;&#x521D;&#x671F;&#x5024;&#x304B;&#x3089;&#x5909;&#x66F4;&#x3055;&#x308C;&#x305F;&#x3089;&#x767A;&#x751F;</li>
+<li><code>modified</code>: <strong>&#x30C8;&#x30C3;&#x30D7;&#x30EC;&#x30D9;&#x30EB;</strong>&#x306E;&#x5024;&#x304C;&#x521D;&#x671F;&#x5024;&#x304B;&#x3089;&#x5909;&#x66F4;&#x3055;&#x308C;&#x305F;&#x3089;&#x767A;&#x751F;</li>
+</ul>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">&quot;app&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">validator</span> <span class="hljs-attribute">name</span>=<span class="hljs-value">&quot;validation1&quot;</span>
+             @<span class="hljs-attribute">valid</span>=<span class="hljs-value">&quot;onValid&quot;</span>
+             @<span class="hljs-attribute">invalid</span>=<span class="hljs-value">&quot;onInvalid&quot;</span>
+             @<span class="hljs-attribute">touched</span>=<span class="hljs-value">&quot;onTouched&quot;</span>
+             @<span class="hljs-attribute">dirty</span>=<span class="hljs-value">&quot;onDirty&quot;</span>
+             @<span class="hljs-attribute">modified</span>=<span class="hljs-value">&quot;onModified&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;comment-field&quot;</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">label</span> <span class="hljs-attribute">for</span>=<span class="hljs-value">&quot;username&quot;</span>&gt;</span>&#x30E6;&#x30FC;&#x30B6;&#x30FC;&#x540D;:<span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">&quot;text&quot;</span> 
+             <span class="hljs-attribute">v-validate:username</span>=<span class="hljs-value">&quot;[&apos;required&apos;]&quot;</span>/&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;password-field&quot;</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">label</span> <span class="hljs-attribute">for</span>=<span class="hljs-value">&quot;password&quot;</span>&gt;</span>&#x30D1;&#x30B9;&#x30EF;&#x30FC;&#x30C9;:<span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">&quot;password&quot;</span> 
+             <span class="hljs-attribute">v-validate:password</span>=<span class="hljs-value">&quot;{ required: true, minlength: 8 }&quot;</span>/&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span>{{occuredValid}}<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span>{{occuredInvalid}}<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span>{{occuredTouched}}<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span>{{occuredDirty}}<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span>{{occuredModified}}<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">validator</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+</code></pre>
+<pre><code class="lang-javascript"><span class="hljs-keyword">new</span> Vue({
+  el: <span class="hljs-string">&apos;#app&apos;</span>,
+  data: {
+    occuredValid: <span class="hljs-string">&apos;&apos;</span>,
+    occuredInvalid: <span class="hljs-string">&apos;&apos;</span>,
+    occuredTouched: <span class="hljs-string">&apos;&apos;</span>,
+    occuredDirty: <span class="hljs-string">&apos;&apos;</span>,
+    occuredModified: <span class="hljs-string">&apos;&apos;</span>
+  },
+  methods: {
+    onValid: <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+      <span class="hljs-keyword">this</span>.occuredValid = <span class="hljs-string">&apos;occured valid event&apos;</span>
+      <span class="hljs-keyword">this</span>.occuredInvalid = <span class="hljs-string">&apos;&apos;</span>
+    },
+    onInvalid: <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+      <span class="hljs-keyword">this</span>.occuredInvalid = <span class="hljs-string">&apos;occured invalid event&apos;</span>
+      <span class="hljs-keyword">this</span>.occuredValid = <span class="hljs-string">&apos;&apos;</span>
+    },
+    onTouched: <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+      <span class="hljs-keyword">this</span>.occuredTouched = <span class="hljs-string">&apos;occured touched event&apos;</span>
+    },
+    onDirty: <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+      <span class="hljs-keyword">this</span>.occuredDirty = <span class="hljs-string">&apos;occured dirty event&apos;</span>
+    },
+    onModified: <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">modified</span>) </span>{
+      <span class="hljs-keyword">this</span>.occuredModified = <span class="hljs-string">&apos;occured modified event: &apos;</span> + modified
+    }
+  }
+})
+</code></pre>
+
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="./errors.html" class="navigation navigation-prev " aria-label="Previous page: エラーメッセージ"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="./lazy.html" class="navigation navigation-next " aria-label="Next page: 遅延初期化"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="gitbook/app.js"></script>
+
+    
+    <script src="gitbook/plugins/gitbook-plugin-edit-link/plugin.js"></script>
+    
+
+    
+    <script src="gitbook/plugins/gitbook-plugin-github/plugin.js"></script>
+    
+
+    
+    <script src="gitbook/plugins/gitbook-plugin-search/lunr.min.js"></script>
+    
+
+    
+    <script src="gitbook/plugins/gitbook-plugin-search/search.js"></script>
+    
+
+    
+    <script src="gitbook/plugins/gitbook-plugin-sharing/buttons.js"></script>
+    
+
+    
+    <script src="gitbook/plugins/gitbook-plugin-fontsettings/buttons.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"edit-link":{"base":"https://github.com/vuejs/vue-validator/tree/master/docs","label":"Edit This Page"},"github":{"url":"https://github.com/vuejs/vue-validator/"},"advanced-emoji":{"embedEmojis":false},"highlight":{},"search":{"maxIndexSize":1000000},"sharing":{"facebook":false,"twitter":false,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2}};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>

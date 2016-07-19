@@ -1,0 +1,446 @@
+<!DOCTYPE HTML>
+<html lang="ja" >
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>グループ化 | vue-validator documentation</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 2.6.7">
+        
+        
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+        
+    <link rel="stylesheet" href="gitbook/style.css">
+    
+        
+        <link rel="stylesheet" href="gitbook/plugins/gitbook-plugin-advanced-emoji/emoji-website.css">
+        
+    
+        
+        <link rel="stylesheet" href="gitbook/plugins/gitbook-plugin-highlight/website.css">
+        
+    
+        
+        <link rel="stylesheet" href="gitbook/plugins/gitbook-plugin-search/search.css">
+        
+    
+        
+        <link rel="stylesheet" href="gitbook/plugins/gitbook-plugin-fontsettings/website.css">
+        
+    
+    
+
+        
+    
+    
+    <link rel="next" href="./errors.html" />
+    
+    
+    <link rel="prev" href="./classes.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+    <div class="book"
+        data-level="10"
+        data-chapter-title="グループ化"
+        data-filepath="grouping.md"
+        data-basepath="."
+        data-revision="Wed Jul 20 2016 02:10:50 GMT+0900 (JST)"
+        data-innerlanguage="ja">
+    
+
+<div class="book-summary">
+    <nav role="navigation">
+        <ul class="summary">
+            
+            
+            
+            
+
+            
+
+            
+    
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="./index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                        はじめに
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1" data-path="installation.html">
+            
+                
+                    <a href="./installation.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.</b>
+                        
+                        インストール
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2" data-path="started.html">
+            
+                
+                    <a href="./started.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.</b>
+                        
+                        はじめに
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3" data-path="structure.html">
+            
+                
+                    <a href="./structure.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.</b>
+                        
+                        バリデーション結果の構造
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4" data-path="syntax.html">
+            
+                
+                    <a href="./syntax.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.</b>
+                        
+                        バリデータシンタックス
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5" data-path="validators.html">
+            
+                
+                    <a href="./validators.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.</b>
+                        
+                        ビルドインバリデータ
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6" data-path="model.html">
+            
+                
+                    <a href="./model.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.</b>
+                        
+                        v-model インテグレーション
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7" data-path="reset.html">
+            
+                
+                    <a href="./reset.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.</b>
+                        
+                        バリデーション結果の初期化
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="8" data-path="elements.html">
+            
+                
+                    <a href="./elements.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.</b>
+                        
+                        バリデーション可能なフォーム要素
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="9" data-path="classes.html">
+            
+                
+                    <a href="./classes.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.</b>
+                        
+                        バリデーションクラス
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter active" data-level="10" data-path="grouping.html">
+            
+                
+                    <a href="./grouping.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>10.</b>
+                        
+                        グループ化
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="11" data-path="errors.html">
+            
+                
+                    <a href="./errors.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>11.</b>
+                        
+                        エラーメッセージ
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="12" data-path="events.html">
+            
+                
+                    <a href="./events.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>12.</b>
+                        
+                        イベント
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="13" data-path="lazy.html">
+            
+                
+                    <a href="./lazy.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>13.</b>
+                        
+                        遅延初期化
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="14" data-path="custom.html">
+            
+                
+                    <a href="./custom.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>14.</b>
+                        
+                        カスタムバリデータ
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="15" data-path="timing.html">
+            
+                
+                    <a href="./timing.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>15.</b>
+                        
+                        バリデーションのタイミング変更
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="16" data-path="async.html">
+            
+                
+                    <a href="./async.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>16.</b>
+                        
+                        非同期バリデーション
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="17" data-path="api.html">
+            
+                
+                    <a href="./api.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>17.</b>
+                        
+                        API
+                    </a>
+            
+            
+        </li>
+    
+
+
+            
+            <li class="divider"></li>
+            <li>
+                <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+                    GitBookで公開 
+                </a>
+            </li>
+            
+        </ul>
+    </nav>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header" role="navigation">
+    <!-- Actions Left -->
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="./" >vue-validator documentation</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1" role="main">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-">
+                    
+                        <h1 id="&#x30B0;&#x30EB;&#x30FC;&#x30D7;&#x5316;">&#x30B0;&#x30EB;&#x30FC;&#x30D7;&#x5316;</h1>
+<p>vue &#x30D0;&#x30A4;&#x30F3;&#x30C7;&#x30A3;&#x30F3;&#x30B0;&#x6587;&#x6CD5;&#x306F; input &#x3092;&#x30B0;&#x30EB;&#x30FC;&#x30D7;&#x5316;&#x3059;&#x308B;&#x3053;&#x3068;&#x304C;&#x3067;&#x304D;&#x307E;&#x3059;:</p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-title">validator</span> <span class="hljs-attribute">name</span>=<span class="hljs-value">&quot;validation1&quot;</span> <span class="hljs-attribute">:groups</span>=<span class="hljs-value">&quot;[&apos;passwordGroup&apos;]&quot;</span>&gt;</span>
+  &#x30E6;&#x30FC;&#x30B6;&#x30FC;&#x540D;: <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">&quot;text&quot;</span> <span class="hljs-attribute">v-validate:username</span>=<span class="hljs-value">&quot;[&apos;required&apos;]&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">br</span>&gt;</span>
+
+  &#x30D1;&#x30B9;&#x30EF;&#x30FC;&#x30C9;: <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">&quot;password&quot;</span> <span class="hljs-attribute">group</span>=<span class="hljs-value">&quot;passwordGroup&quot;</span> <span class="hljs-attribute">v-validate:password</span>=<span class="hljs-value">&quot;{ minlength: 8, required: true }&quot;</span>/&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">br</span>&gt;</span>
+
+  &#x78BA;&#x8A8D;&#x7528;&#x30D1;&#x30B9;&#x30EF;&#x30FC;&#x30C9;: <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">&quot;password&quot;</span> <span class="hljs-attribute">group</span>=<span class="hljs-value">&quot;passwordGroup&quot;</span> <span class="hljs-attribute">v-validate:password-confirm</span>=<span class="hljs-value">&quot;{ minlength: 8, required: true }&quot;</span>/&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">br</span>&gt;</span>
+
+  <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">v-if</span>=<span class="hljs-value">&quot;$validation1.username.invalid&quot;</span>&gt;</span>&#x7121;&#x52B9;&#x306A;&#x30E6;&#x30FC;&#x30B6;&#x30FC;&#x540D;&#x3067;&#x3059;!<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">br</span>&gt;</span>
+
+  <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">v-if</span>=<span class="hljs-value">&quot;$validation1.passwordGroup.invalid&quot;</span>&gt;</span>&#x7121;&#x52B9;&#x306A;&#x30D1;&#x30B9;&#x30EF;&#x30FC;&#x30C9;&#x5165;&#x529B;&#x3067;&#x3059;!<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">validator</span>&gt;</span>
+</code></pre>
+
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="./classes.html" class="navigation navigation-prev " aria-label="Previous page: バリデーションクラス"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="./errors.html" class="navigation navigation-next " aria-label="Next page: エラーメッセージ"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="gitbook/app.js"></script>
+
+    
+    <script src="gitbook/plugins/gitbook-plugin-edit-link/plugin.js"></script>
+    
+
+    
+    <script src="gitbook/plugins/gitbook-plugin-github/plugin.js"></script>
+    
+
+    
+    <script src="gitbook/plugins/gitbook-plugin-search/lunr.min.js"></script>
+    
+
+    
+    <script src="gitbook/plugins/gitbook-plugin-search/search.js"></script>
+    
+
+    
+    <script src="gitbook/plugins/gitbook-plugin-sharing/buttons.js"></script>
+    
+
+    
+    <script src="gitbook/plugins/gitbook-plugin-fontsettings/buttons.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"edit-link":{"base":"https://github.com/vuejs/vue-validator/tree/master/docs","label":"Edit This Page"},"github":{"url":"https://github.com/vuejs/vue-validator/"},"advanced-emoji":{"embedEmojis":false},"highlight":{},"search":{"maxIndexSize":1000000},"sharing":{"facebook":false,"twitter":false,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2}};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>
